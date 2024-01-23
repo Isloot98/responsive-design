@@ -1,0 +1,44 @@
+.container {
+    background: #eee;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .box{
+    height: 33%;
+    border: 3px solid black;
+    width: 33%;
+  }
+
+  .one {
+    background-color: red;
+  }
+
+  .two {
+    background-color: blue;
+  }
+
+  .three {
+    background-color: green;
+  }
+
+  @media (min-width: 800px) {
+    .container {
+      background: plum;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .box {
+        width: 80%;
+    }
+  }
+
+  
